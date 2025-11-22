@@ -1,0 +1,93 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0d0d0d;
+  color: #f3f4f6;
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  color: white;
+  padding: 0 20px;
+}
+
+.hero .intro { font-size: 1.2em; margin-bottom: 0.3em; }
+.hero h1 { font-size: 3em; margin-bottom: 0.5em; }
+.hero .description { font-size: 1.1em; max-width: 600px; margin: 0 auto 1.5em; }
+
+.hero-buttons .btn {
+  text-decoration: none;
+  padding: 0.8em 1.5em;
+  border-radius: 5px;
+  margin: 0 0.5em;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-buttons .primary {
+  background-color: #7c3aed;
+  color: white;
+}
+
+.hero-buttons .primary:hover {
+  background-color: #a78bfa;
+}
+
+.hero-buttons .secondary {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.hero-buttons .secondary:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Sections */
+section { padding: 60px 20px; max-width: 1000px; margin: auto; }
+h2 { color: #a78bfa; text-align: center; margin-bottom: 20px; }
+
+/* About & Skills & Contact */
+.about, .skills, .contact { text-align: center; }
+.skills-container h3 { margin-top: 10px; color: #c4b5fd; }
+
+/* Projects */
+.projects .project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #1f1f2f;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(167, 139, 250, 0.5);
+}
+
+/* Links */
+a { color: #a78bfa; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #a78bfa;
+  text-align: center;
+  padding: 20px;
+}
